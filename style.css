@@ -608,4 +608,18 @@ body {
 
 
 
+/* Ép giao diện tự thu nhỏ vừa vặn trên màn hình điện thoại */
+@media (max-width: 1024px) {
+    #wrapper, .container, body > div {
+        zoom: 0.5; /* Tự động thu nhỏ toàn bộ trang web bằng một nửa */
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: top center;
+    }
+}
 
+@media (max-width: 480px) {
+    #wrapper, .container, body > div {
+        zoom: 0.35; /* Trên màn hình dọc điện thoại nhỏ thì thu nhỏ hơn nữa */
+        -moz-transform: scale(0.35);
+    }
+}
