@@ -608,37 +608,4 @@ body {
 
 
 
-/* Sửa lại chuẩn chỉnh cho màn hình xoay ngang của Redmi K30i 5g */
-@media (max-width: 900px) and (orientation: landscape) {
-    #wrapper, .container, body > div {
-        width: 1200px !important; 
-        height: 550px !important; /* Ép chiều cao cố định để không bị bóp dẹt khung hình */
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        
-        /* Tăng tỷ lệ scale lên 0.48 để giao diện to rõ ràng, vừa khít chiều dọc màn hình */
-        transform: translate(-50%, -50%) scale(0.48) !important; 
-        transform-origin: center center !important;
-    }
-    body {
-        overflow: hidden !important;
-        background-color: #fcaec0; 
-    }
-}
 
-/* Khi thiết bị để màn hình dọc */
-@media (max-width: 450px) and (orientation: portrait) {
-    #wrapper, .container, body > div {
-        width: 1200px !important;
-        height: 600px !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) scale(0.32) !important;
-        transform-origin: center center !important;
-    }
-    body {
-        overflow: hidden !important;
-    }
-}
