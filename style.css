@@ -623,3 +623,13 @@ body {
         -moz-transform: scale(0.35);
     }
 }
+
+/* Định dạng riêng cho màn hình điện thoại (Mobile) */
+@media screen and (max-width: 480px) {
+    .text__letter p {
+        font-size: 13px !important;    /* Giảm cỡ chữ nhỏ xuống (mặc định thường là 16px) */
+        line-height: 1.5;             /* Giúp khoảng cách giữa các dòng thoáng hơn, dễ đọc */
+        word-break: break-word;        /* Ép chữ tự động xuống hàng chuẩn, không bị tràn ra rìa */
+        text-align: justify;           /* Căn đều hai bên cho văn bản đẹp hơn (tùy chọn) */
+    }
+}
