@@ -605,3 +605,19 @@ body {
 #mewmew.animationOp{
     animation: opacityHeart 1s 1s forwards;
 }
+
+@media (max-width: 1024px) {
+    #wrapper {
+        zoom: 0.5; 
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: top center;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper {
+        zoom: 0.35;
+        -webkit-transform: scale(0.35);
+        -webkit-transform-origin: top center;
+    }
+}
